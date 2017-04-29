@@ -5,9 +5,13 @@ h1{
     }
 
 #earth{
-    border:5px solid gold;
     float:left;
     }
+    
+#shopList{
+    margin:20px;    
+}
+
 .pollution-energy{
     border:5px solid brown;
     height:20px;
@@ -15,7 +19,6 @@ h1{
     
 #bought{
     width:810px;
-    float:left;
     border:5px solid salmon;
     border-radius:50px;
     }
@@ -114,7 +117,6 @@ margin: 0px 0px 9px;
 .s-desc {
     
 }
-
 .buy {
     float: left;
     margin-left: 50px;
@@ -123,4 +125,9 @@ margin: 0px 0px 9px;
 */
 .project {
     display: flex;
+}
+
+#container {
+    display:flex;
+    justify-content:center;
 }

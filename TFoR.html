@@ -2,13 +2,13 @@
 <html>
     <head>
         <title>The Future of Planet Earth</title>
-         <link rel="stylesheet" type="text/css" href="TFoR.css">
-         <script src="https://code.jquery.com/jquery-3.2.1.js"></script> 
-         <script src="TFoR.js"></script>
+        <link rel="stylesheet" type="text/css" href="TFoR.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script> 
+        <script src="TFoR.js"></script>
     </head>
     <body>
-    <div>
-        <h1>The Future of Planet Earth</h1><button id="help">HELP</button>
+    <h1>The Future of Planet Earth</h1><button id="help">HELP</button>
+    <div id='container'>    
         <div id="earth">
              <div class="pollution-energy">Pollution : <span id="totalPollutionValue"></span>
             </div>
@@ -20,9 +20,8 @@
             </div>
             <img src="https://goo.gl/Z86gfF" />
         </div>
-    </div>
-    
-    <div id="bought">
+        <div id="shopList">
+            <div id="bought">
         <h2>Things already bought</h2>
         <div id="more-stuff">
             <img class="factories" src="https://goo.gl/fI5TqX">
@@ -30,7 +29,7 @@
             <span id="coalOwned"></span>
             </div>
             <img class="factories" src="https://goo.gl/iEWPxU">
-            <div idclass="stuff">
+            <div class="stuff">
             <span id="solarOwned"></span>
             </div>
             <img class="factories" src="http://i.imgur.com/7D6lAAK.png">
@@ -40,7 +39,7 @@
         </div>
     </div>
 
-    <div id="shop">
+            <div id="shop">
         <div class = "project">
               <div class = "resource-img">
                      <div class ="text"> Coal Factory</div>
@@ -95,6 +94,8 @@
         <div>
             <button class = "buy" id="buyAirFilter"> Buy </button>
         </div>
+        </div>
+    </div>
         </div>
     </div>
 </body>
