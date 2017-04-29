@@ -64,7 +64,7 @@ function gameOver() {
 }
 function gameWin() {
     $('body').html('');
-    $('body').css('background-image','url("https://goo.gl/1kAnVd")');
+    $('body').css('background-image','url("https://goo.gl/mclCp6');
     $('body').append("<h1>You win</hi>");
 }
 
