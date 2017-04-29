@@ -60,12 +60,14 @@ function increaseTotalPerClick() {
 function gameOver() {
     $('body').html('');
     $('body').css('background-image','url("https://goo.gl/1kAnVd")');
-    $('body').append("<h1>GAME OVER</hi>");
+    $('body').append("<h1>GAME OVER</h1>");
+    $('body').append("<h2 id='lost'>You failed to clean the planet. The earth is not habitable any more. Try next time</h2>");
 }
 function gameWin() {
     $('body').html('');
-    $('body').css('background-image','url("https://goo.gl/mclCp6');
+    $('body').css('background-image','url("https://goo.gl/cgf1fx');
     $('body').append("<h1>You win</hi>");
+    $('body').append("<h2>You did it! Pollution is no  more! Earth is once again habitable for humans and many other species to live once more</h2>");
 }
 
 function updateValues() {

@@ -15,17 +15,19 @@ h2  {
     Font-size:50px;
     text-align:center;
     }
-    
 body {
     background-color:gainsboro;
-    border:5px double silver;
+    background-repeat: no-repeat;
+    background-size:100%;
     }
-    
+#lost {
+    color:white;
+}
 #earth {
     float:left;
 }
 #shop {   
-    border:5px solid salmon;
+    border:5px solid #53a7ea;
 }    
 #shopList {
     margin:20px;    
@@ -37,7 +39,7 @@ body {
 }
 #bought {
     width:810px;
-    border:5px solid salmon;
+    border:5px solid #53a7ea;
     border-radius:50px;
 }
 #more-stuff {
