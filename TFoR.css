@@ -1,27 +1,16 @@
 h1{
     background-image: url("https://goo.gl/8tdHEV");
-    color:blue;
+    background-repeat: no-repeat;
+    background-size:100%;
+    color:black;
     text-align:center;
-    }
-
-#earth{
-    float:left;
-    }
-    
-#shopList{
-    margin:20px;    
-}
-
-.pollution-energy{
-    border:5px solid brown;
-    height:20px;
+    box-shadow:
+                1px 1px #53a7ea,
+                2px 2px #53a7ea,
+                4px 4px #53a7ea;
+        -webkit-transform: translateX(-3px);
     }
     
-#bought{
-    width:810px;
-    border:5px solid salmon;
-    border-radius:50px;
-    }
 h2  {
     Font-size:50px;
     text-align:center;
@@ -29,24 +18,51 @@ h2  {
     
 body {
     background-color:gainsboro;
-    border:5px dashed silver;
+    border:5px double silver;
     }
     
+#earth {
+    float:left;
+}
+#shop {   
+    border:5px solid salmon;
+}    
+#shopList {
+    margin:20px;    
+}
+#more-stuff {
+    display:flex;
+    justify-content: space-around;
+    font-size: 40px;
+}
+#bought {
+    width:810px;
+    border:5px solid salmon;
+    border-radius:50px;
+}
+#more-stuff {
+    display:flex;
+    justify-content: space-around;
+    font-size: 40px;
+}
+
+#container {
+    display:flex;
+    justify-content:center;
+}
+.pollution-energy{
+    border:5px solid brown;
+    height:20px;
+}
 .factories{
     
     height:100px;
     width:100px;
-    }
-
+}
 .stuff{
     border:5px solid red;
     height:100px;
-    }
-#more-stuff{
-    display:flex;
-    justify-content: space-around;
-    font-size: 40px;
-    }
+}
 /* Coal */
 .resources{
     width: 100px;
@@ -67,8 +83,9 @@ margin: 0px 0px 9px;
     border: 2px solid black;
     padding: 0px 150px 0px 0px;
     margin-top: 33px;
-  
 }
+
+
 /*
 .resource-img {
     float:left;
@@ -83,6 +100,10 @@ margin: 0px 0px 9px;
     float: left;
     margin-left: 50px;
     margin-top: 70px;
+}
+.project {
+    display: flex;
+    margin:10px;
 }
 
 /* Solar */
@@ -123,11 +144,4 @@ margin: 0px 0px 9px;
     margin-top: 70px;
 }
 */
-.project {
-    display: flex;
-}
 
-#container {
-    display:flex;
-    justify-content:center;
-}

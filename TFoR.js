@@ -51,6 +51,9 @@ function increaseTotalPerClick() {
     if (total.pollution >= 100) {
         gameOver();
     }
+    else if (total.pollution <= 0) {
+        gameWin();
+    }
     updateValues();
 }
 
@@ -58,6 +61,11 @@ function gameOver() {
     $('body').html('');
     $('body').css('background-image','url("https://goo.gl/1kAnVd")');
     $('body').append("<h1>GAME OVER</hi>");
+}
+function gameWin() {
+    $('body').html('');
+    $('body').css('background-image','url("https://goo.gl/1kAnVd")');
+    $('body').append("<h1>You win</hi>");
 }
 
 function updateValues() {
@@ -87,6 +95,7 @@ $('#buySolar').click(function(){
 $('#buyAirFilter').click(function(){
     purchase('filter');
 });
+
 
 updateValues();
 }
