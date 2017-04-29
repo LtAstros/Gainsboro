@@ -1,11 +1,101 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="TFoR.css">
-        <script src="TFoR.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <title>The Future of Planet Earth</title>
+         <link rel="stylesheet" type="text/css" href="TFoR.css">
+         <script src="https://code.jquery.com/jquery-3.2.1.js"></script> 
+         <script src="TFoR.js"></script>
     </head>
     <body>
-        <h1>hello</h1>
-    </body>
+    <div>
+        <h1>The Future of Planet Earth</h1><button id="help">HELP</button>
+        <div id="earth">
+             <div class="pollution-energy">Pollution : <span id="totalPollutionValue"></span>
+            </div>
+            <div class="pollution-energy">Energy : <span id="totalEnergyValue"></span>
+            </div>
+            <div class="pollution-energy">Pollution per click : <span id="pollutionPerClick"></span>
+            </div>
+            <div class="pollution-energy">Energy per click : <span id="energyPerClick"></span>
+            </div>
+            <img src="https://goo.gl/Z86gfF" />
+        </div>
+    </div>
+    
+    <div id="bought">
+        <h2>Things already bought</h2>
+        <div id="more-stuff">
+            <img class="factories" src="https://goo.gl/fI5TqX">
+            <div class="stuff">
+            <span id="coalOwned"></span>
+            </div>
+            <img class="factories" src="https://goo.gl/iEWPxU">
+            <div idclass="stuff">
+            <span id="solarOwned"></span>
+            </div>
+            <img class="factories" src="http://i.imgur.com/7D6lAAK.png">
+            <div id="air-filter" class="stuff">
+            <span id="filterOwned"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="shop">
+        <div class = "project">
+              <div class = "resource-img">
+                     <div class ="text"> Coal Factory</div>
+                     <div>
+                        <img id = "coal" class = "resources" src="http://vignette3.wikia.nocookie.net/play-rust/images/f/ff/Coal_icon.png/revision/latest?cb=20151218003507">
+                     </div>
+                 </div>
+                <div class = "description"> 
+                   <ul>
+                        <li><div class = "c-desc"> Cost - 5 Energy</div></li>
+                        <li><div class = "c-desc"> +2 Energy</div></li>
+                        <li><div class = "c-desc"> +1 Pollution</div></li>
+                   </ul>
+                </div>
+                        
+                <div>
+                        <button id = "buyCoal" class = "buy"> Buy </button>
+                </div>
+        </div>
+            <div class = "project">
+                <div class = "resource-img">
+                    <div class = "text"> Solar Panel</div>
+                    <div>
+                    <img class = "resources" src="https://maxcdn.icons8.com/Share/icon/Industry//solar_panel1600.png">
+                    </div>
+                </div>
+            <div class = "description"> 
+            <ul>
+            <li><div class = "s-desc"> Cost - 20 Energy</div></li>
+            <li><div class = "s-desc"> +2 Energy</div></li>
+            </ul>
+        </div>
+                        
+        <div>
+            <button id = "buySolar" class = "buy"> Buy </button>
+        </div>
+        </div>
+
+        <div class = "project">
+            <div class = "resource-img">
+                <div class = "text"> Air Filter</div>
+                <div>
+                <img class = "resources" src="https://system.netsuite.com/c.1066071/site/productCallouts/Rep_Filters/KF-1035/KF-1032.png">
+                </div>
+            </div>
+            <div class = "description"> 
+            <ul>
+                <li><div class = "s-desc"> Cost - 50 Energy</div></li>
+                <li><div class = "s-desc"> -1 pollution</div></li>
+            </ul>
+        </div>
+        <div>
+            <button class = "buy" id="buyAirFilter"> Buy </button>
+        </div>
+        </div>
+    </div>
+</body>
 </html>

@@ -1,10 +1,31 @@
 var perClick = {
     pollution: 1,
-    energy: 1,
+    energy: 1
 };
 var total = {
     pollution:50,
-    energy:10,
+    energy:10
+};
+
+var items = {
+    coal: {
+        cost: 5,
+        energy: 2,
+        pollution: 1,
+        total: 0
+        },
+    solar: {
+        cost: 20,
+        energy: 2,
+        pollution: 0,
+        total: 0
+    },
+    filter: {
+        cost: 50,
+        energy: 0,
+        pollution: -1,
+        total: 0
+    }
 };
 //----------------------------------------------------
 function increasePerClick(energy,pollution){
@@ -12,10 +33,12 @@ function increasePerClick(energy,pollution){
     perClick.energy += energy;
 }
 
-function purchase(cost, energy, pollution){
-       if (total.energy >= cost){
-           total.energy -= cost;
-           increasePerClick(energy,pollution);
+function purchase(itemName){
+    var item = items[itemName];
+       if (total.energy >= item.cost){
+           total.energy -= item.cost;
+           increasePerClick(item.energy,item.pollution);
+            item.total += 1;
            updateValues();
            return true;
        }
@@ -25,7 +48,16 @@ function purchase(cost, energy, pollution){
 function increaseTotalPerClick() {
     total.pollution += perClick.pollution;
     total.energy += perClick.energy;
+    if (total.pollution >= 100) {
+        gameOver();
+    }
     updateValues();
+}
+
+function gameOver() {
+    $('body').html('');
+    $('body').css('background-image','url("https://goo.gl/1kAnVd")');
+    $('body').append("<h1>GAME OVER</hi>");
 }
 
 function updateValues() {
@@ -33,24 +65,29 @@ function updateValues() {
     $('#totalPollutionValue').html(total.pollution);
     $('#energyPerClick').html(perClick.energy);
     $('#pollutionPerClick').html(perClick.pollution);
+    $('#coalOwned').html(items.coal.total);
+    $('#solarOwned').html(items.solar.total);
+    $('#filterOwned').html(items.filter.total);
 }
 
 //----------------------------------------------------
-
+function pageload (){
 $("#earth").click(increaseTotalPerClick);
     
 //----------------------------------------------------
 
 $('#buyCoal').click(function(){
-    purchase(5,2,1);
+    purchase('coal');
 });
 
 $('#buySolar').click(function(){
-    purchase(20,2,0);
+    purchase('solar');
 });
 
 $('#buyAirFilter').click(function(){
-    purchase(50,0,-1);
+    purchase('filter');
 });
 
 updateValues();
+}
+$(document).ready(pageload);

@@ -1,3 +1,126 @@
+h1{
+    background-image: url("https://goo.gl/8tdHEV");
+    color:blue;
+    text-align:center;
+    }
+
+#earth{
+    border:5px solid gold;
+    float:left;
+    }
+.pollution-energy{
+    border:5px solid brown;
+    height:20px;
+    }
+    
+#bought{
+    width:810px;
+    float:left;
+    border:5px solid salmon;
+    border-radius:50px;
+    }
+h2  {
+    Font-size:50px;
+    text-align:center;
+    }
+    
 body {
-    background-color: gainsboro;
+    background-color:gainsboro;
+    border:5px dashed silver;
+    }
+    
+.factories{
+    
+    height:100px;
+    width:100px;
+    }
+
+.stuff{
+    border:5px solid red;
+    height:100px;
+    }
+#more-stuff{
+    display:flex;
+    justify-content: space-around;
+    font-size: 40px;
+    }
+/* Coal */
+.resources{
+    width: 100px;
+    height:100px;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.text{
+font-size: 20px;
+margin: 0px 0px 9px;
+}
+
+.description {
+    font-size: 20px;
+    float: left;
+    margin-left: 50px;
+    border: 2px solid black;
+    padding: 0px 150px 0px 0px;
+    margin-top: 33px;
+  
+}
+/*
+.resource-img {
+    float:left;
+}
+*/
+/*
+.c-desc {
+    float: left;
+}
+*/
+.buy {
+    float: left;
+    margin-left: 50px;
+    margin-top: 70px;
+}
+
+/* Solar */
+/*
+.sresources{
+    width: 100px;
+    height:100px;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+#solar-text{
+font-size: 20px;
+margin: 0px 0px 9px;
+}
+
+#solar-description {
+    font-size: 20px;
+    float: left;
+    margin-left: 50px;
+    border: 2px solid black;
+    padding: 0px 150px 0px 0px;
+    margin-top: 33px;
+  
+}
+
+#solar-img {
+    float:left;
+}
+
+
+.s-desc {
+    
+}
+
+.buy {
+    float: left;
+    margin-left: 50px;
+    margin-top: 70px;
+}
+*/
+.project {
+    display: flex;
 }

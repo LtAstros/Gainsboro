@@ -10,7 +10,8 @@ planet dies out and you lose.
 
 How did we build it?
 In the HTML/CSS we divided the screen in 3 parts, the left most part is the planet
-which will be clicked 
+which will be clicked gives energy and adds or subtracts polution. On the right 
+it shows things purchased and things you can buy.
 
 What are the challenges in this project?
 One of the big challenges we ran into is the lack of time. This is because with more
@@ -18,7 +19,8 @@ time we could discuss problems easier and make things look more profesional.
 
 What did we learn?
 We learned how to seperate code through a team. This made things easier and cohesive
-in the group.
+in the group. Also we learned new things like putting functions in functions, we
+objects, and flex boxes.
 
 What is next for our project?
 We plan to add more purchasable things in the game. Also one plan would be upgrades
